@@ -1,0 +1,7 @@
+This is a simple script just for sorting photos (based on EXIF data) in current folder into folders like 
+C:\Users\Administrator\Arx\date\<year>\<month>\<day>\*.jpg
+<month> is in full english form (January, Feburary, etc)
+
+Python 2.x
+
+-- dennis(a)yurichev.com
