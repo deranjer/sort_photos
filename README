@@ -5,5 +5,35 @@ C:\Users\Administrator\Arx\date\<year>\<month>\<day>\*.jpg
 Python 2.x
 
 -- dennis(a)yurichev.com
+-- deranjer(a)gmail.com
 
 Requires dateutil and six python modules (included in download)
+
+Options:
+#set dir for original pictures
+odir='/mnt/media/Pictures- OLD'
+
+#If you want to file pictures in a new directory, specify here, make sure dir exits
+move_dir=True
+ndir='/mnt/media/NewPictures2'
+
+#sort only these file ext.  Comment this line out to sort ALL file types
+exts = ['.jpeg', '.jpg', '.exif', '.tiff', '.raw', '.gif', '.bmp', '.png', '.pam', '.webp', '.svg', '.rgbe']
+
+#exclude dirs here (if folder contains tree structure) that you don't want moved/sorted
+excludes = ['test test',  'atest', '2005', '2006', '2007']
+
+#If you want to move pictures with NO/BROKEN metadata to the ROOT folder of your new dir/sort dir, set true here
+#else pictures will stay where they were
+#Only applicable if sorting to new dir
+move_no_meta = True
+
+#Will use datetime to guess what year/day the picture belongs in
+guess_date_from_name=True
+
+#clamp year range.  If dateutil guesses a crazy year (way old or way past current, this will clamp it to between these years
+yearRangeOld = 1960
+yearRangeNew = 2013
+
+#Dry run will not move anything, just tell you what would happen
+dry_run=False
