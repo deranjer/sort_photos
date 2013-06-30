@@ -9,7 +9,17 @@ Python 2.x
 
 Requires dateutil and six python modules (included in download)
 
-Options:
+Features:
+  Sort in same dir or move to new dir
+  Sort specific file extensions only
+  Exclude certain folders from sort
+  "Dry Run" - show what will be moved, but not move it
+  Guess Date of picture from name
+  Clamp Date guess to year range
+  If no metadata found, move to root dir (if moving to new dir only)
+
+
+Example Options:
 #set dir for original pictures
 odir='/mnt/media/Pictures- OLD'
 
